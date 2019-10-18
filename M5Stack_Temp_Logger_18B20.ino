@@ -14,7 +14,7 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 #include <OneWire.h>
-// Library for Dallas 18B20 tem sensors
+// Library for Dallas 18B20 temp sensors
 #include <DallasTemperature.h>
 
 // Data wire is connected to GPIO17
@@ -62,7 +62,7 @@ void setup(){
   }
   Serial.println("");
   Serial.println("WiFi connected.");
-Serial.print("Requesting temperatures...");
+  Serial.print("Requesting temperatures...");
   sensors.requestTemperatures(); // Send the command to get temperatures
   Serial.println("DONE");
   
